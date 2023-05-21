@@ -1,0 +1,173 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; /* tipo da fonte de toda a pagina */
+}
+
+.pai{
+    width: 60%;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.limpar{ /* classe para limpar flutuações */
+    clear:both; 
+}
+
+.topo{ /* formatação da div topo mudando cor do fundo */
+    background-color: rgb(129, 88, 167);
+    border: 1px solid;
+    height: 100px;
+    padding: top 15px; ;
+    font-size: 20px;
+    text-align:center;
+    padding-left: 60px;
+    padding-right: 6px;
+    margin-top: 30px; 
+}
+
+.topo span{ /* formatação da tag span mudando a cor do texto */
+    color: white;
+    display: inline-block ;
+    padding: rigth 15px; ;
+    padding-top: 10px;
+}
+
+.topo a{
+    color: white;
+    text-decoration:none ;
+}
+.topo a:hover {
+    color: orange;
+}
+
+/* inicio da div perfil */
+
+.perfil{
+    height: 200px;
+    border-bottom: 2px solid;
+    background-color: rgb(231, 229, 229);
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+.dados{ /* formatação da  div dados */
+    width: 70%;
+    float: left;
+    text-align: center;
+    padding: 45px 20px;
+}
+    .dados h1{
+        font-size: 40px;
+    }
+    .dados p{
+        font-size: 30px;
+    }
+
+.foto{ /*  deixando a div foto ao lado da div dados */
+    width: 30%;
+    float: left;
+}
+    .foto img{  /*  deixando a foto com bordas arredondadas */
+        margin-top: 20px;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 1px solid;
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+
+    .imagem{ /*imagem github*/
+        border-radius: 50%;
+        border: 1px solid;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+    }
+
+    /* inicio da div principal */
+
+.corpo{
+    margin-top: 14px;
+    background-color: rgb(231, 229, 229);
+    border:1px solid;
+}
+.recuo { text-indent:4em 
+}
+
+.xp{ /* aqui coloquei a div XP ao lado da div tech */
+float: left; /* aqui utilizei (float: left;) */
+width: 65%;
+padding: 10px;
+padding-bottom: 10px;
+background-color: rgb(231, 229, 229);
+}
+
+.xp h2{ /* formatação da tag H2 div xp */
+    font-size: 28px;
+    text-decoration: underline; /* deixando titulo sublinhado */
+    margin-bottom: 10px;
+
+}
+
+.xp h3,.xp p{ /* formatação da tag H3 e do dos paragrafos  div xp */
+    padding: left 10px;
+    text-align: justify;
+}
+
+.tech{
+    float: right; /* aqui utilizei (float: right;) */
+    width: 35%;
+    background-color: rgb(231, 229, 229);
+    border-left: 1px solid;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+.tech h2{
+    text-decoration: underline; /* deixando titulo sublinhado */
+    font-size: 28px;
+    margin-top:20px
+}
+.tech p{
+    float: left;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.circulo{ /* modelagem da classe circulo para as habilidades */
+    height: 16px;
+    width: 16px;
+    background-color: rgb(129, 88, 167);
+    border-radius: 50%;
+    float: left;
+    margin: 5px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+ .tech h4{
+    font-weight:normal ;
+    text-align: justify;
+    margin-top: 15px ;
+ }
+
+.educ{ /* formatação dos tamanhos bordas, margins e paddings da  div educ */
+    border-top: 2px solid ;
+    padding: 10px;
+    padding-bottom: 30px;
+    border: 1px solid;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    background-color: rgb(231, 229, 229);
+}
+
+.educ h2{ /* formatação da tag H2 div educ */
+    text-decoration: underline; /* deixando titulo sublinhado */
+    font-size: 28px;
+    padding-left: 10px;
+}
+
+.educ h3{ 
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+.educ p{
+    padding-left: 25px;
+}

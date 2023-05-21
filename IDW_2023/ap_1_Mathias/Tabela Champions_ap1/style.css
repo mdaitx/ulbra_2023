@@ -1,0 +1,108 @@
+
+*{
+    margin: 0; /* zerando margens */
+    font-family: Arial, Helvetica, sans-serif; /* alterando tipo da fonte */
+    font-weight: normal; /* alterando peso da fonte */
+    font-size: 16px; /* alterando tamanho da fonte */
+}
+body{
+    background-color:rgb(240 , 240, 240) ;
+}
+
+.header{ /* clasee para estilizar o cabeçalho da pagina */
+    background-color: #162E58;
+    color: white;
+}
+.header h2{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+.header h1{
+    padding-top: 20px;
+    padding-left:40px;
+}
+.grupos, .gols, .cartoes { /* classes para as divs grupos, gols e cartoes */
+    background-color: white;
+    width: 60%; /* aqui foi definido a largura que as divs  com as tabelas para ocuparem 60% */
+    margin: auto;
+}
+.grupos h3{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+table{ /* estilizando as tabelas */
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+th{
+    color: #70757a;
+}
+td{
+    border-top: 1px solid rgb(240 , 240, 240);
+}
+.img-club{
+    width: 24px;
+    height: 24px;
+}
+
+.left{
+    text-align: left;
+}
+
+.bl-blue{
+    border-left: 3px solid #4285F4;
+}
+.bl-orange{
+    border-left: 3px solid #FA7B17;
+}
+
+.w200{ /* classe para alterar largura da cedula */
+    width: 300px;
+}
+
+.gols h2{ /* estilizando ditetamente a tag h2 , tipo um cabeçalho da tabela gols */
+    background-color: #162E58;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.cartoes h2{ /* estilizando ditetamente a tag h2 , tipo um cabeçalho da tabela cartoes  */
+    background-color: #162E58;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.gols h3{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    font-weight: bold;
+}
+
+.cartoes h3{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    font-weight: bold;
+}
+
+.img-jogador{
+    width: 36px;
+    height: 36px; ;
+    border-radius: 50%;
+}
+.w40{
+    width: 40px; /* classe para alterar largura da cedula da classificação do jogador */
+}
+
+.w60{
+    width: 60px; /* classe para alterar largura da cedula gols */
+}

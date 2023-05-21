@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between; /* Header com título à esquerda e navegação à direita */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* deixando itens da lista de navegação lado a lado */
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+main {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+section {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 1000px; /* deixando sessoês de no maximo 1000px */
+}
+
+section h2 {
+    text-align: center;
+}
+.foto img{
+    width: 300px;
+    border-radius: 10px;
+    min-width: 290px; /* ajustando Largura mínima de imagem de 290px */
+}
+    .foto img:hover { /* efeito de borda branca quando passa o mouse */
+        border: 1px solid white;
+    }
+
+.about{
+    display: flex; /* deixando Sessão sobre mim, imagem e texto lado a lado */
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    
+}
+.text{
+    padding: 20px;
+    text-align: justify;
+}
+
+.projetos {
+    display: flex; /* dixando projetos lado a lado */
+    justify-content: space-between;
+    justify-content: center;
+    flex-direction:row; /* deixando 3 progetos por linha*/
+    flex-wrap: wrap;  /* quebra de linha projetos deixando 3 progetos por linha*/
+}
+
+.projeto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 2%;
+}
+
+.projeto img {
+    max-width: 100%;
+    height: auto;
+    width: 280px;
+    height: 154px;
+}
+    .projeto img:hover {  /* efeito de borda branca quando passa o mouse */
+        border: 1px solid white;
+    }
+
+.projeto h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.projeto p {
+    text-align: justify;
+    max-width: 290px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form button:hover { /* dixando fundo branco do botão ao clicar */
+    background-color: #fff;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* dixando itens lado a lado */
+    align-items: center; /* dixando itens centralizados */
+    padding: 10px;
+}
+header h1::before{
+    text-align: center;
+    content: 'DESENVOLVEDOR ';
+}
+
+
+@media screen and (max-width: 800px) { /* ajustando tela para larguras até 800px */
+    header {
+        flex-direction: column;  /* ajustando Itens de Navegação centralizados abaixo do título */
+        justify-content: center;
+        align-items: center;
+    }
+    header h1::before{
+        text-align: center;
+        content: 'DEV';
+    }
+    .about {
+        flex-direction: column; /* ajustando sessão sobre mim, texto abaixo da imagem (ambos centralizados) */
+        justify-content: center;
+        align-items: center;
+    }
+    .projetos {
+        flex-direction: column;  /* ajustando Um projeto abaixo do outro (centralizados) */
+        justify-content: center;
+        align-items: center;
+    }
+    .projeto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 2%;
+        min-width:80% ;
+    }
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+}
+
+@media screen and (max-width: 450px) {  /* ajustando tela para larguras até 450px */
+   
+    header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    header h1::before{
+        text-align: center;
+        content: 'DEV ';
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projetos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projeto {
+        min-width:80% ;
+    }
+    footer {
+        flex-direction: column; /* ajustando Itens do footer alinhados um abaixo do outro */
+        justify-content: center;
+        align-items: center;
+        font-size: auto;
+    }
+    body{
+        font-size:0.8em;  /* ajustando Tamanho da fonte 20% menor*/
+    }
+    .foto img{
+        width: 300px;
+        border-radius: 10px;
+        min-width: 290px; 
+    }
+
+}
+
+
+
+
+
