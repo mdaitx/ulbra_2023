@@ -11,30 +11,35 @@
 </head>
 <body=>
   <header class="container-fluid bg-black text-white text-center p-4">
-    <img style="width:28%; height: 150px;" src="../imagens/logo_certo.png" alt="Card image">
+    <img style="width:28%; height:auto;" src="../imagens/logo_correto_png.png" alt="Card image">
     <p class="fs-2">Slogan teste!</p>
   </header>
-  <nav class="navbar navbar-expand-sm bg-dark">  <!-- inicio da nav -->
-    <div class="container-fluid justify-content-md-center justify-content-sm-center ">
-      <!-- Links -->
-      <ul class="navbar-nav ">
-        <li class="nav-item ">
-          <a class="nav-link text-white " href="../paginas/homepage.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-            <button type="button" class="btn btn dropdown-toggle text-white" data-bs-toggle="dropdown">
-              Integrantes
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="kurtpage.html">Kurt Cobain</a></li>
-              <li><a class="dropdown-item" href="#">Krist Novoselic</a></li>
-              <li><a class="dropdown-item" href="#">Dave Grohl</a></li>
-            </ul>
-          </div><!-- fechamento dropdown -->
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> <!-- inicio da nav -->
+    <div class="container-fluid"><!-- inicio da div -->
+      <a class="navbar-brand" href="../paginas/homepage.html"><img style="width:45px;" src="../imagens/nirvana_logo_carinha.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link text-white " href="../paginas/homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn btn dropdown-toggle text-white" data-bs-toggle="dropdown">
+                Integrantes
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="kurtpage.html">Kurt Cobain</a></li>
+                <li><a class="dropdown-item" href="#">Krist Novoselic</a></li>
+                <li><a class="dropdown-item" href="#">Dave Grohl</a></li>
+              </ul>
+            </div><!-- fechamento dropdown -->
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
             <button type="button" class="btn btn dropdown-toggle text-white" data-bs-toggle="dropdown">
               Discos
             </button>
@@ -42,7 +47,6 @@
               <li><a class="dropdown-item" href="#">Bleach</a></li>
               <li><a class="dropdown-item" href="#">Nevermind</a></li>
               <li><a class="dropdown-item" href="#">In Utero</a></li>
-
               <li>
                 <hr class="dropdown-divider">
                 </hr>
@@ -50,16 +54,18 @@
               <li><a class="dropdown-item" href="#">outros</a></li>
             </ul>
           </div> <!-- fechamento dropdown -->
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">História</a>
-        </li>
-      </ul> <!-- fechamento Links -->
-    </div> <!--fechamento div -->
-  </nav><!-- fechamento Nav -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">História</a>
+          </li>
+        </ul>
+      </div>
+    </div><!--fechamento div -->
+  </nav> <!-- fechamento Nav -->
+
   <main>
     <!-- Carousel -->
-    <div id="demo" class="carousel slide w-100 mx-auto bg-dark mt-2" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide w-100 mx-auto bg-dark mt-1" data-bs-ride="carousel">
 
       <!-- Indicators/dots -->
       <div class="carousel-indicators">
@@ -83,12 +89,12 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img style="height:auto;" src="../imagens/banda_trio3.jpg" alt="banda" class="d-block w-75 mx-auto">
+          <img style="height:auto;" src="../imagens/banda_foto.jpg" alt="banda" class="d-block w-75 mx-auto">
           <div class="carousel-caption">
             <h3>Nirvana</h3>
           </div>
         </div>
-      </div> 
+      </div>
 
       <!-- Left and right controls/icons -->
       <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
@@ -99,14 +105,16 @@
       </button>
     </div> <!-- fechamento carrosel -->
 
-    <div class="container-fluid text-center bg-dark text-white mt-1 pb-1 font-"><h1>Integrantes Fundadores</h1></div>
+    <div class="container-fluid text-center bg-dark text-white mt-1 pb-1 font-">
+      <h1>Integrantes Fundadores</h1>
+    </div>
 
     <div class="container-fluid d-flex">
 
-      <section class="row">
-        <div class="col-sm-6 col-md-4">
+      <section class="row bg-black">
+        <div class="col-sm-6 col-md-6 col-xl-6 ">
           <div class="card mt-3">
-            <img style="height:280px;" class="card-img-top" src="../imagens/kurt.webp" alt="Card image">
+            <img style="height:auto;" class="card-img-top" src="../imagens/kurt.webp" alt="Card image">
             <div class="card-body">
               <h4 class="card-title pb-3">Kurt Cobain</h4>
               <p class="card-text text-start"><b>Nome:</b> Kurt Donald Cobain
@@ -118,30 +126,30 @@
           </div><!-- fechamento card -->
         </div><!-- fechamento coluna -->
 
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-6 col-md-6 col-xl-6 ">
           <div class="card mt-3">
-            <img style="height:280px;" class="card-img-top" src="../imagens/krist.webp" alt="Card image">
-            <div class="card-body">
-              <h4 class="card-title pb-3">Krist Novoselic</h4>
-              <p class="card-text text-start"> <b>Nome:</b> Krist Anthony Novoselic
-                Aniversário: 16 de maio de 1965
-                Origem: Compton, Califórnia, Estados Unidos
-                Altura: 2,01 m</p>
-              <a href="bolo.html" class="btn btn-dark">Conhecer</a>
-            </div>
-          </div><!-- fechamento card -->
-        </div><!-- fechamento coluna -->
-
-        <div class="col-sm-6 col-md-4"> 
-          <div class="card mt-3">
-            <img style="height:280px;" class="card-img-top" src="../imagens/dave.webp" alt="Card image">
+            <img style="height:auto; " class="card-img-top" src="../imagens/dave.webp" alt="Card image">
             <div class="card-body">
               <h4 class="card-title pb-3">Dave Grohl</h4>
               <p class="card-text text-start"><b>Nome:</b> David Eric Grohl
                 Aniversário: 14 de janeiro de 1969
                 Origem: Warren, Ohio, Estados Unidos
                 Altura: 1,83 m</p>
-              <a href="bolo.html" class="btn btn-dark">Conhecer</a>
+              <a href="kurtpage.html" class="btn btn-dark">Conhecer</a>
+            </div>
+          </div><!-- fechamento card -->
+        </div><!-- fechamento coluna -->
+
+        <div class="col-sm-6 col-md-6 col-xl-6 mx-auto">
+          <div class="card mt-3 mb-3">
+            <img style="height:auto;" class="card-img-top" src="../imagens/krist.webp" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title pb-3">Krist Novoselic</h4>
+              <p class="card-text text-start"> <b>Nome:</b> Krist Anthony Novoselic
+                Aniversário: 16 de maio de 1965
+                Origem: Compton, Califórnia, Estados Unidos
+                Altura: 2,01 m</p>
+              <a href="kurtpage.html" class="btn btn-dark">Conhecer</a>
             </div>
           </div><!-- fechamento card -->
         </div><!-- fechamento coluna -->
@@ -149,8 +157,8 @@
     </div>
   </main>
 
-  <footer class="container-fluid bg-dark text-white text-center p-4 mt-3">
-    <p class="fs-4">&copy;Todos os Direitos Reservados</p>
+  <footer class="container-fluid bg-dark text-white text-center p-4 mt-1">
+    <p class="fs-4">&copy;Todos os Direitos Reservados  <img style="width:45px;" src="../imagens/nirvana_logo_carinha.png" alt=""></p>
   </footer>
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

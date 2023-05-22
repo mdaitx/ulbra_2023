@@ -12,63 +12,66 @@
 
 <body>
   <header class="container-fluid bg-black text-white text-center p-4">
-    <img style="width:28%; height: 150px;" src="../imagens/logo_certo.png" alt="Card image">
+    <img style="width:28%; height:auto;" src="../imagens/logo_correto_png.png" alt="Card image">
     <p class="fs-2">Slogan teste!</p>
   </header>
-  <nav class="navbar navbar-expand-sm bg-dark"> <!-- inicio da nav -->
-    <div class="container-fluid justify-content-md-center justify-content-sm-center ">
-      <!-- Links -->
-      <ul class="navbar-nav ">
-        <li class="nav-item ">
-          <a class="nav-link text-white " href="../paginas/homepage.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-            <button type="button" class="btn btn dropdown-toggle text-white" data-bs-toggle="dropdown">
-              Integrantes
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Integrante 1</a></li>
-              <li><a class="dropdown-item" href="#">Integrante 2</a></li>
-              <li><a class="dropdown-item" href="#">Integrante 3</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> <!-- inicio da nav -->
+    <div class="container-fluid"><!-- inicio da div -->
+      <a class="navbar-brand" href="../paginas/homepage.html"><img style="width:45px;" src="../imagens/nirvana_logo_carinha.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link text-white " href="../paginas/homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn btn dropdown-toggle text-white" data-bs-toggle="dropdown">
+                Integrantes
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="kurtpage.html">Kurt Cobain</a></li>
+                <li><a class="dropdown-item" href="#">Krist Novoselic</a></li>
+                <li><a class="dropdown-item" href="#">Dave Grohl</a></li>
+              </ul>
+            </div><!-- fechamento dropdown -->
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
             <button type="button" class="btn btn dropdown-toggle text-white" data-bs-toggle="dropdown">
               Discos
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Disco 1</a></li>
-              <li><a class="dropdown-item" href="#">Disco 2</a></li>
-              <li><a class="dropdown-item" href="#">Disco 3</a></li>
+              <li><a class="dropdown-item" href="#">Bleach</a></li>
+              <li><a class="dropdown-item" href="#">Nevermind</a></li>
+              <li><a class="dropdown-item" href="#">In Utero</a></li>
               <li>
                 <hr class="dropdown-divider">
                 </hr>
               </li>
               <li><a class="dropdown-item" href="#">outros</a></li>
             </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">História</a>
-        </li>
-      </ul> <!-- fechamento Links -->
-    </div> <!--fechamento div -->
-  </nav><!-- fechamento Nav -->
+          </div> <!-- fechamento dropdown -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">História</a>
+          </li>
+        </ul>
+      </div>
+    </div><!--fechamento div -->
+  </nav> <!-- fechamento Nav -->
   <main>
 
-    <div class="container-fluid bg-dark d-flex mt-2">
-
-      <section class="conteiner-fluid d-flex mt-1">
-        <div class=" text text-white mt-1">
-          <p class=" row p-2 row col-6 float-start">
-          <img classe="float-start" src="../imagens/kurt_2.jpg" alt="kurt">
-          <div class="text-center text-white mt-1 mb-2">
-            <h1>Kurt Cobain</h1>
-          </div>
-          Kurt Cobain ganhou uma guitarra em seu aniversário de 14 anos e, a partir daí, não largou mais o instrumento.
+    <section class=" container-fluid bg-black">
+      <div class="col-sm-6 col-md-6 col-xl-6 mx-auto ">
+        <div class="card mt-1 bg-dark">
+          <img style="height:auto;" class="card-img-top" src="../imagens/Kurt_Cobain.avif" alt="Card image">
+          <div class="card-body bg-dark">
+            <h4 class="card-title pb-3 text-center text-white">Kurt Cobain</h4>
+            <p class="card-text text-white text-start">
+              Kurt Cobain ganhou uma guitarra em seu aniversário de 14 anos e, a partir daí, não largou mais o instrumento.
           Ele conheceu Krist Novoselic no ensino médio e os dois começaram a tocar juntos. Um tempo depois, montaram o
           Nirvana e chamaram Dave Grohl para ser o baterista.
           Cobain não gostava da fama e não entendia porque o Nirvana fez tanto sucesso. Na verdade, o que ele queria
@@ -81,19 +84,20 @@
           No dia 8 de abril de 1994, Kurt Cobain cometeu suicídio, com um tiro na cabeça. Ele deixou uma carta dirigida
           ao seu amigo imaginário de infância, dizendo que, há muito tempo, não sentia mais vontade de ouvir ou criar
           música, nem de escrever.
-          </p>
-          <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#curiosidade"><b>Curiosidades</b></button>
-          <div id="curiosidade" class="collapse">
+            </p>
+            <button class="btn btn-secondary " data-bs-toggle="collapse" data-bs-target="#curiosidade"><b>Curiosidades</b></button>
+          <div id="curiosidade" class="collapse text-white">
             <h4>Converse preto</h4>
             Kurt Cobain tinha uma preferência quase obsessiva por usar somente tênis da marca Converse. E
             de cor preto. Às vezes, muito raramente, variava usando um Converse de cor vermelho.
           </div><!-- fechamento texto curiosidades -->
-        </div>
-    </div>
+          </div>
+        </div><!-- fechamento card -->
+      </div><!-- fechamento coluna -->
   </main>
 
-  <footer class="container-fluid bg-dark text-white text-center p-4 mt-2">
-    <p class="fs-4">&copy;Todos os Direitos Reservados</p>
+  <footer class="container-fluid bg-dark text-white text-center p-4 mt-1">
+    <p class="fs-4">&copy;Todos os Direitos Reservados <img style="width:45px;" src="../imagens/nirvana_logo_carinha.png" alt=""></p>
   </footer>
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
