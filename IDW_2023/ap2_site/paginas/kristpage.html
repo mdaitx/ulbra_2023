@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Krist Novoselic</title>
+</head>
+
+<body>
+    <header class="container-fluid bg-black text-white text-center p-4">
+        <img style="width:28%; height:auto;" src="../imagens/logo_correto_png.png" alt="Card image">
+        <p class="fs-2">Slogan teste!</p>
+    </header>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> <!-- inicio da nav -->
+        <div class="container-fluid"><!-- inicio da div -->
+            <a class="navbar-brand" href="../paginas/homepage.html"><img style="width:45px;"
+                    src="../imagens/nirvana_logo_carinha.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link text-white " href="../paginas/homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn dropdown-toggle text-white" data-bs-toggle="dropdown">
+                                Integrantes
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="kurtpage.html">Kurt Cobain</a></li>
+                                <li><a class="dropdown-item" href="kristpage.html">Krist Novoselic</a></li>
+                                <li><a class="dropdown-item" href="davepage.html">Dave Grohl</a></li>
+                            </ul>
+                        </div><!-- fechamento dropdown -->
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn dropdown-toggle text-white" data-bs-toggle="dropdown">
+                                Discos
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Bleach</a></li>
+                                <li><a class="dropdown-item" href="#">Nevermind</a></li>
+                                <li><a class="dropdown-item" href="#">In Utero</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                    </hr>
+                                </li>
+                                <li><a class="dropdown-item" href="#">outros</a></li>
+                            </ul>
+                        </div> <!-- fechamento dropdown -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="historiapage.html">História</a>
+                    </li>
+                </ul>
+            </div>
+        </div><!--fechamento div -->
+    </nav> <!-- fechamento Nav -->
+    <main>
+
+        <section class=" container-fluid bg-black">
+            <div class="col-sm-6 col-md-6 col-xl-6 mx-auto">
+                <div class="card mt-1 bg-dark">
+                    <img style="height:auto;" class="card-img-top" src="../imagens/krist_3.jpg" alt="Card image">
+                    <div class="card-body bg-dark">
+                        <h4 class="card-title pb-3 text-center text-white">Krist Novoselic</h4>
+                        <p class="card-text text-white text-start">
+                            Krist Novoselic foi o baixista do Nirvana, além de ser um dos fundadores do grupo. Após a
+                            morte de Kurt, ele formou a banda Sweet 75, em 1995, e a Eyes Adrift, em 2002. No entanto,
+                            lançou apenas um disco com cada uma delas.
+                            Entre 2006 e 2009, ele tocou baixo no grupo de punk rock Flipper e também fez uma
+                            participação na música I Should Have Know, do Foo Fighters, em 2011, tocando acordeão.
+                            Atualmente, ele é o baixista da banda Giants in the Trees.
+                            Além da carreira musical, Krist também é bastante conhecido por seu ativismo político. Ele
+                            foi o criador do JAMPAC (Comitê de Ação Política de Artistas e Músicos Conjuntos), para
+                            defender os interesses dos músicos e sempre está se manifestando sobre o tema nas mídias.
+                        </p>
+                        <button class="btn btn-secondary" data-bs-toggle="collapse"
+                            data-bs-target="#curiosidade"><b>Curiosidades</b></button>
+                        <div id="curiosidade" class="collapse text-white">
+                            <h4 class="mt-2">Piloto de Avião </h4>
+                            Novoselic tornou-se piloto de avião licenciado pela FAA ("Federal Aviation Administration",
+                            entidade governamental dos Estados Unidos responsável pelos regulamentos e todos os aspectos
+                            da aviação civil no país). É dono de um Cessna 182 com o prefixo N233KS.
+                        </div><!-- fechamento texto curiosidades -->
+                    </div>
+                </div><!-- fechamento card -->
+            </div><!-- fechamento coluna -->
+    </main>
+
+    <footer class="container-fluid bg-dark text-white text-center p-4 mt-1">
+        <p class="fs-4">&copy;Todos os Direitos Reservados <img style="width:45px;"
+                src="../imagens/nirvana_logo_carinha.png" alt=""></p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
