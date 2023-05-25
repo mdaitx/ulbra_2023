@@ -65,7 +65,7 @@
     </nav> <!-- fechamento Nav -->
     <main>
 
-        <section class=" container-fluid bg-black">
+        <section class=" container-fluid bg-black pb-2">
             <div class="col-sm-6 col-md-6 col-xl-6 mx-auto">
                 <h2 class="text-center text-warning pb-3 pt-5 mt-1 font-monospace">LINHA DO TEMPO DO NIRVANA</h2>
                 <ul class="text-white pb-5 form-check">
@@ -116,12 +116,59 @@
                         Puppets.
                     </li>
                     <li>16 de dezembro de 1993: a MTV exibe o programa “Unplugged” do Nirvana.</li>
-                    <li>7 de janeiro de 1994: Nirvana toca na Seattle Arena. Será o último show da banda nos Estados Unidos.</li>
+                    <li>7 de janeiro de 1994: Nirvana toca na Seattle Arena. Será o último show da banda nos Estados
+                        Unidos.</li>
                     <li>6 de fevereiro de 1994: Nirvana embarca em uma turnê pela Europa.</li>
                 </ul>
             </div><!-- fechamento coluna -->
-    </main>
 
+            <section class="mx-auto" style="max-width:700px;">
+                <h2 class="p-2 text-center text-warning font-monospace">Para os Fãns - Deixe sua mensagem</h2>
+                <form class="d-flex flex-column border p-3 rounded-2 bg-black text-white">
+                    <label for="nome">Nome:</label>
+                    <input class="form-control" id="nome" type="text" maxlength="20" minlength="2"
+                        placeholder="digite seu nome">
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-control" id="email" type="email" placeholder="digite seu email">
+                    <label for="nasc">Data de Nasc:</label>
+                    <input class="form-control" id="nasc" type="date">
+                    <label for="idade">Qual a sua Idade?</label>
+                    <input class="form-control" id="idade" type="number" min="10" max="90">
+                    <label for="pais">Selecione seu pais:</label>
+                    <select class="form-control" id="pais" name="pais">
+                        <option value="Br">Brasil</option>
+                        <option value="eua">EUA</option>
+                        <option value="chi">China</option>
+                        <option value="jap">Japão</option>
+                        <option value="aus">Australia</option>
+                    </select>
+                    <label for="texto">Feedback:</label>
+                    <textarea class="form-control mt-2" name="texto" id="texto" cols="30" rows="5" placeholder="Digite seu Feedback"></textarea>
+                    
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-dark mt-3" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Salvar
+                    </button>
+                    
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal body -->
+                                <div class="modal-body text-black text-center">
+                                    <h2>Deseja realmente Salvar?</h2>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer justify-content-around">
+                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">voltar</button>
+                                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Salvar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+    </main>
     <footer class="container-fluid bg-dark text-white text-center p-4 mt-1">
         <p class="fs-4">&copy;Todos os Direitos Reservados <img style="width:45px;"
                 src="../imagens/nirvana_logo_carinha.png" alt=""></p>
