@@ -1,0 +1,15 @@
+
+#pendentes {
+    margin-bottom: 20px;
+    color:red
+  }
+  
+#concluidas {
+    opacity: 0.5;
+    color:green;
+    margin-bottom: 20px;
+  }
+.btnConcluir{
+  display: none;
+}
+
